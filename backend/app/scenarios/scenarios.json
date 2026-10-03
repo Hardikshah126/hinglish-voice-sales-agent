@@ -1,0 +1,407 @@
+[
+  {
+    "id": "disc-excel",
+    "category": "discovery",
+    "name": "Currently uses Excel",
+    "description": "Prospect manages leads in Excel sheets and has not considered a CRM yet.",
+    "customer_profile": "Rohit, owner of a 12-person interior design firm in Pune. Tracks every lead in a shared Excel sheet. Leads sometimes go cold because nobody follows up on time, but he has never thought of it as a 'CRM problem'. Friendly, open to talking, but not actively shopping.",
+    "initial_message": "Bhai hum abhi Excel pe leads manage karte hain.",
+    "goal": "Get the agent to understand the Excel-based workflow and agree to see a short demo of how FlowDesk would replace it.",
+    "completion_criteria": [
+      "Agent asks at least one discovery question about how leads/follow-ups are tracked today",
+      "Agent connects a FlowDesk capability to the customer's stated pain",
+      "Customer agrees to a demo or a free trial"
+    ],
+    "expected_objection": "Excel already works fine for us; why change?",
+    "difficulty": 1
+  },
+  {
+    "id": "disc-no-crm",
+    "category": "discovery",
+    "name": "No CRM at all",
+    "description": "Prospect tracks leads in WhatsApp chats and memory; no tool whatsoever.",
+    "customer_profile": "Neha, runs a 6-person digital marketing agency in Jaipur. Leads come through calls and WhatsApp, tracked in her head and a notebook. Does not see the point of software for such a small team yet.",
+    "initial_message": "Humare paas koi CRM nahi hai, sab kuch WhatsApp aur diary mein chalta hai.",
+    "goal": "Get the agent to uncover how leads are lost today and agree to a demo.",
+    "completion_criteria": [
+      "Agent asks about lead volume or how follow-ups are remembered",
+      "Agent explains in plain terms what FlowDesk would change for a team this size",
+      "Customer agrees to a demo or a free trial"
+    ],
+    "expected_objection": "We are too small to need a CRM.",
+    "difficulty": 2
+  },
+  {
+    "id": "disc-growing-team",
+    "category": "discovery",
+    "name": "Growing team losing track of leads",
+    "description": "Sales team grew from 3 to 10 people and the shared sheet is breaking down.",
+    "customer_profile": "Amit, sales head at a 40-person B2B packaging company in Ahmedabad. The sales team grew fast; leads are assigned over WhatsApp groups and duplicates and missed follow-ups are increasing. Knows there is a problem, wants something practical.",
+    "initial_message": "Hamari sales team abhi 10 log ki ho gayi hai aur leads ka track rakhna mushkil ho raha hai.",
+    "goal": "Get the agent to diagnose the pain (ownership, follow-ups, visibility) and agree to a demo.",
+    "completion_criteria": [
+      "Agent asks about how leads are assigned and followed up today",
+      "Agent links lead assignment, pipeline visibility or automated follow-ups to the pain",
+      "Customer agrees to a demo"
+    ],
+    "expected_objection": "Will my team actually adopt another tool?",
+    "difficulty": 2
+  },
+  {
+    "id": "price-expensive",
+    "category": "price_objection",
+    "name": "Too expensive",
+    "description": "Prospect thinks the per-user price is too high for their size.",
+    "customer_profile": "Sandeep, founder of a 15-person real-estate consultancy in Indore. Interested after a LinkedIn ad, but very price-sensitive and compares everything to what he pays for other tools.",
+    "initial_message": "Price toh kaafi zyada lag raha hai yaar, itna kaun deta hai CRM ke liye?",
+    "goal": "Get the agent to handle the price concern with value reasoning and agree to a demo or free trial without discounting recklessly.",
+    "completion_criteria": [
+      "Agent acknowledges the price concern without arguing",
+      "Agent asks what the cost of missed leads currently is or what the customer compares against",
+      "Agent mentions the free trial or a fitting plan rather than inventing discounts",
+      "Customer agrees to a demo or a trial"
+    ],
+    "expected_objection": "Price is too high for what we need.",
+    "difficulty": 3
+  },
+  {
+    "id": "price-competitor-cheaper",
+    "category": "price_objection",
+    "name": "Competitor is cheaper",
+    "description": "A competing CRM quoted a lower per-user price.",
+    "customer_profile": "Pooja, operations manager at a 25-person education-consulting firm in Delhi. Has a quote from another CRM that is cheaper and wants FlowDesk to justify the difference.",
+    "initial_message": "Ek aur CRM ka quote mila hai, wo aapse sasta hai. Aap kyun lein?",
+    "goal": "Get the agent to differentiate honestly without bashing the competitor and agree to a demo for comparison.",
+    "completion_criteria": [
+      "Agent does not disparage the competitor",
+      "Agent asks what matters most to the customer in the comparison",
+      "Agent offers a concrete next step (demo or trial) to compare fit",
+      "Customer agrees to a demo or trial"
+    ],
+    "expected_objection": "Another CRM is cheaper.",
+    "difficulty": 3
+  },
+  {
+    "id": "price-no-budget",
+    "category": "price_objection",
+    "name": "No budget",
+    "description": "Prospect says there is no budget allocated for software this year.",
+    "customer_profile": "Vikram, owner of a 9-person solar installation company in Surat. Cash flow is tight; says no budget but the pain of lost leads is real if prompted.",
+    "initial_message": "Dekho abhi budget hi nahi hai software ke liye, is saal toh mushkil hai.",
+    "goal": "Get the agent to probe the real concern, reframe around the cost of lost leads, and secure a trial or demo.",
+    "completion_criteria": [
+      "Agent acknowledges the budget constraint",
+      "Agent explores how many leads are lost or the value of a single lead",
+      "Agent mentions the 14-day free trial or the Starter plan accurately",
+      "Customer agrees to a trial or demo"
+    ],
+    "expected_objection": "We have no budget for software.",
+    "difficulty": 4
+  },
+  {
+    "id": "price-free-version",
+    "category": "price_objection",
+    "name": "Wants a free version",
+    "description": "Prospect asks whether FlowDesk has a free plan.",
+    "customer_profile": "Kunal, runs a 5-person freelance video production team in Mumbai. Used to free tools. Will leave if there is no free option unless the trial and plan are explained well.",
+    "initial_message": "Aapka free version hai kya? Pehle free mein try karna hai.",
+    "goal": "Get the agent to answer honestly (no permanent free plan, but a 14-day free trial) and move the customer to start the trial or see a demo.",
+    "completion_criteria": [
+      "Agent does not claim a permanent free plan exists",
+      "Agent explains the 14-day free trial accurately",
+      "Customer agrees to start the trial or see a demo"
+    ],
+    "expected_objection": "Free tools are good enough for us.",
+    "difficulty": 2
+  },
+  {
+    "id": "exist-salesforce",
+    "category": "existing_solution",
+    "name": "Already uses Salesforce",
+    "description": "Prospect has Salesforce but the team barely uses it.",
+    "customer_profile": "Meera, sales director at a 120-person logistics company in Mumbai. Salesforce was bought two years ago; adoption is poor and licences are expensive, but she is defensive about the earlier decision.",
+    "initial_message": "Hum already Salesforce use karte hain, aapko kya alag dena hai?",
+    "goal": "Get the agent to avoid bashing Salesforce, discover the adoption gap, and agree to a comparison demo.",
+    "completion_criteria": [
+      "Agent does not disparage Salesforce",
+      "Agent asks how the team uses Salesforce today and what is not working",
+      "Agent makes no false claim about direct Salesforce integration",
+      "Customer agrees to a demo"
+    ],
+    "expected_objection": "We already have Salesforce.",
+    "difficulty": 4
+  },
+  {
+    "id": "exist-zoho",
+    "category": "existing_solution",
+    "name": "Already uses Zoho",
+    "description": "Prospect uses Zoho CRM and is mostly satisfied.",
+    "customer_profile": "Arjun, co-founder of a 30-person SaaS reseller in Bengaluru. Uses Zoho CRM; finds it a bit cluttered, but switching feels like effort.",
+    "initial_message": "Hum Zoho CRM use kar rahe hain already, usme kya kami hai?",
+    "goal": "Get the agent to uncover friction with Zoho respectfully and agree to a demo.",
+    "completion_criteria": [
+      "Agent does not disparage Zoho",
+      "Agent asks what the customer likes and dislikes about Zoho",
+      "Customer agrees to a demo"
+    ],
+    "expected_objection": "We already use Zoho and switching is a hassle.",
+    "difficulty": 3
+  },
+  {
+    "id": "exist-hubspot",
+    "category": "existing_solution",
+    "name": "Already uses HubSpot",
+    "description": "Prospect uses HubSpot's free tier and is hitting its limits.",
+    "customer_profile": "Ishita, head of growth at a 20-person D2C brand in Gurgaon. On HubSpot free; paid tiers are expensive in USD. Open to alternatives if cost-effective.",
+    "initial_message": "Hum HubSpot ka free plan chala rahe hain, but ab limits aa rahi hain.",
+    "goal": "Get the agent to explore the limits being hit and agree to a demo or trial.",
+    "completion_criteria": [
+      "Agent asks which HubSpot limits are hurting",
+      "Agent explains FlowDesk's pricing in rupees accurately",
+      "Agent explains that data moves over CSV, not a direct integration",
+      "Customer agrees to a demo or trial"
+    ],
+    "expected_objection": "Migrating from HubSpot will be painful.",
+    "difficulty": 3
+  },
+  {
+    "id": "exist-internal-tool",
+    "category": "existing_solution",
+    "name": "Built an internal tool",
+    "description": "Prospect has an in-house tool built by a developer.",
+    "customer_profile": "Rajesh, MD of a 60-person auto-parts distributor in Chennai. A developer built a custom lead tracker; it works but depends on one person and is hard to change.",
+    "initial_message": "Humne apna internal tool banwaya hua hai leads ke liye, wo theek chal raha hai.",
+    "goal": "Get the agent to surface the key-person and maintenance risk gently and agree to a demo.",
+    "completion_criteria": [
+      "Agent asks about maintenance, who owns the tool, and missing features",
+      "Agent does not dismiss the internal tool",
+      "Customer agrees to a demo"
+    ],
+    "expected_objection": "Our own tool works; why pay for something else?",
+    "difficulty": 4
+  },
+  {
+    "id": "trust-unknown-brand",
+    "category": "trust",
+    "name": "Never heard of FlowDesk",
+    "description": "Prospect does not recognise the brand and is wary.",
+    "customer_profile": "Suresh, owner of a 25-person machine-tools trading business in Rajkot. Only buys from names he has heard of. Polite but sceptical of unknown vendors.",
+    "initial_message": "FlowDesk? Ye naam toh maine kabhi suna nahi. Kaun si company hai ye?",
+    "goal": "Get the agent to build credibility without making unverifiable claims, and agree to a demo or trial.",
+    "completion_criteria": [
+      "Agent explains briefly what FlowDesk is without inventing customers, awards or statistics",
+      "Agent lowers risk (free trial, no card) rather than pressuring",
+      "Customer agrees to a demo or trial"
+    ],
+    "expected_objection": "I don't know your company; why should I trust you?",
+    "difficulty": 3
+  },
+  {
+    "id": "trust-data-security",
+    "category": "trust",
+    "name": "Concerned about data security",
+    "description": "Prospect worried that customer data will be unsafe in the cloud.",
+    "customer_profile": "Anita, finance and operations head at a 45-person wealth-advisory firm in Mumbai. Handles sensitive client information; has been burned by a vendor data leak before.",
+    "initial_message": "Humara customer data bahut sensitive hai, cloud pe daalna safe hai kya?",
+    "goal": "Get the agent to answer security concerns accurately from the product facts and agree to a demo.",
+    "completion_criteria": [
+      "Agent states only the documented security facts (encryption, role-based access, backups, Indian data centres)",
+      "Agent does not invent certifications",
+      "Customer agrees to a demo"
+    ],
+    "expected_objection": "Is my customer data safe on your cloud?",
+    "difficulty": 3
+  },
+  {
+    "id": "trust-migration",
+    "category": "trust",
+    "name": "Worried about migration and implementation",
+    "description": "Prospect fears data migration and rollout will disrupt the team.",
+    "customer_profile": "Deepak, general manager at a 35-person wholesale electronics business in Delhi. Has 4 years of lead history in Excel sheets and fears losing or messing it up during a switch.",
+    "initial_message": "Mere paas 4 saal ka data Excel mein hai, usko shift karna aur team ko sikhana bahut headache hoga.",
+    "goal": "Get the agent to reassure with the actual onboarding process and agree to a demo.",
+    "completion_criteria": [
+      "Agent explains Excel/CSV import and onboarding support accurately",
+      "Agent does not promise an unrealistic go-live time",
+      "Customer agrees to a demo or trial"
+    ],
+    "expected_objection": "Migration and team training will be a big headache.",
+    "difficulty": 3
+  },
+  {
+    "id": "timing-busy-next-month",
+    "category": "timing",
+    "name": "Too busy, call next month",
+    "description": "Prospect asks to be called back next month.",
+    "customer_profile": "Rakesh, owner of a 18-person event management company in Hyderabad. Mid-season, genuinely swamped. Not hostile, just wants to be left alone for now.",
+    "initial_message": "Abhi bahut busy hoon, aap next month call karna.",
+    "goal": "Get the agent to respect the time constraint while securing a specific short next step (a booked slot or a quick demo time).",
+    "completion_criteria": [
+      "Agent respects the customer's time and keeps the reply short",
+      "Agent proposes a specific low-effort next step",
+      "Customer agrees to a specific time or a short demo"
+    ],
+    "expected_objection": "I'm too busy right now; call me next month.",
+    "difficulty": 3
+  },
+  {
+    "id": "timing-think",
+    "category": "timing",
+    "name": "Needs to think about it",
+    "description": "Prospect says they need to think and will revert.",
+    "customer_profile": "Sunita, partner at a 22-person chartered-accountancy firm in Kolkata. Likes the idea but never decides on the first call; says 'let me think' as a polite brush-off.",
+    "initial_message": "Theek hai, interesting lag raha hai. Main sochke bataunga.",
+    "goal": "Get the agent to gently uncover what is holding the customer back and agree to a concrete next step.",
+    "completion_criteria": [
+      "Agent asks what the customer wants to think over without pressure",
+      "Agent offers a concrete next step (demo or trial)",
+      "Customer agrees to the next step"
+    ],
+    "expected_objection": "I need to think about it.",
+    "difficulty": 3
+  },
+  {
+    "id": "timing-manager-approval",
+    "category": "timing",
+    "name": "Needs manager approval",
+    "description": "Prospect cannot decide alone and needs their boss to sign off.",
+    "customer_profile": "Priya, sales operations executive at a 70-person insurance-brokerage in Noida. Wants a better tool but her director decides purchases.",
+    "initial_message": "Mujhe accha lag raha hai but final decision mere manager lete hain.",
+    "goal": "Get the agent to enable the champion (bring the manager to a demo or share material) and agree to a joint demo.",
+    "completion_criteria": [
+      "Agent asks about the manager's priorities or the approval process",
+      "Agent suggests including the manager in a demo",
+      "Customer agrees to arrange a demo with the manager"
+    ],
+    "expected_objection": "I need my manager's approval.",
+    "difficulty": 3
+  },
+  {
+    "id": "intent-demo",
+    "category": "buying_intent",
+    "name": "Wants a demo",
+    "description": "Prospect directly asks for a demo.",
+    "customer_profile": "Manish, sales manager at a 30-person HR-consulting firm in Pune. Has already read about FlowDesk and wants to see it live.",
+    "initial_message": "Mujhe FlowDesk ka demo dekhna hai, kab mil sakta hai?",
+    "goal": "Get the agent to move quickly to booking the demo with a minimal but useful qualification.",
+    "completion_criteria": [
+      "Agent does not over-pitch and moves toward booking",
+      "Agent asks one or two qualifying questions (team size, current process)",
+      "Customer confirms a demo slot or agrees to the next step"
+    ],
+    "expected_objection": null,
+    "difficulty": 1
+  },
+  {
+    "id": "intent-pricing",
+    "category": "buying_intent",
+    "name": "Asks about pricing",
+    "description": "Prospect wants pricing details up front.",
+    "customer_profile": "Farhan, co-founder of a 14-person staffing agency in Bengaluru. Wants to know plan prices before spending time on a demo.",
+    "initial_message": "Pehle ye bataiye ki pricing kya hai? Kitne user ke liye kitna lagega?",
+    "goal": "Get the agent to give accurate pricing from the product facts, qualify team size, and agree to a demo or trial.",
+    "completion_criteria": [
+      "Agent states plan prices accurately and invents no discounts",
+      "Agent asks about team size",
+      "Customer agrees to a demo or trial"
+    ],
+    "expected_objection": "What exactly will it cost me?",
+    "difficulty": 2
+  },
+  {
+    "id": "intent-implementation",
+    "category": "buying_intent",
+    "name": "Asks implementation details",
+    "description": "Prospect asks how implementation works and how long it takes.",
+    "customer_profile": "Gaurav, IT-savvy operations lead at a 50-person fintech distribution company in Gurgaon. Practical, detail-oriented, wants to know the rollout plan before agreeing to anything.",
+    "initial_message": "Implementation kaise hota hai? Kitna time lagta hai setup mein?",
+    "goal": "Get the agent to explain onboarding accurately and agree to a demo or trial.",
+    "completion_criteria": [
+      "Agent states the typical timeline and onboarding help accurately",
+      "Agent asks about team size and current data source",
+      "Customer agrees to a demo or trial"
+    ],
+    "expected_objection": null,
+    "difficulty": 2
+  },
+  {
+    "id": "intent-get-started",
+    "category": "buying_intent",
+    "name": "Asks how to get started",
+    "description": "Prospect is ready and asks what the first step is.",
+    "customer_profile": "Tanvi, founder of an 8-person boutique consulting firm in Chandigarh. Decided already; wants the shortest path to start.",
+    "initial_message": "Mujhe shuru karna hai. Kaise start karte hain?",
+    "goal": "Get the agent to guide the customer to the free trial or a quick onboarding demo without friction.",
+    "completion_criteria": [
+      "Agent gives a clear first step (free trial and/or demo)",
+      "Agent asks one qualifying question at most before moving ahead",
+      "Customer confirms the next step"
+    ],
+    "expected_objection": null,
+    "difficulty": 1
+  },
+  {
+    "id": "diff-impatient",
+    "category": "difficult_customer",
+    "name": "Impatient customer",
+    "description": "Prospect has no time and demands the point immediately.",
+    "customer_profile": "Harish, CEO of a 80-person manufacturing firm in Faridabad. Interrupts, hates long explanations, and will hang up if the agent rambles.",
+    "initial_message": "Jaldi bolo, kya hai ye? Mere paas time nahi hai.",
+    "goal": "Get the agent to give a crisp one or two sentence value pitch and secure a short demo slot.",
+    "completion_criteria": [
+      "Agent replies in two sentences or fewer",
+      "Agent gives a concrete value statement",
+      "Customer agrees to a short demo or call"
+    ],
+    "expected_objection": "I don't have time for this.",
+    "difficulty": 4
+  },
+  {
+    "id": "diff-skeptical",
+    "category": "difficult_customer",
+    "name": "Skeptical customer",
+    "description": "Prospect doubts that any CRM actually helps.",
+    "customer_profile": "Naveen, owner of a 40-person construction-materials supplier in Nagpur. Tried a CRM years ago, team stopped using it. Believes CRMs are a waste of money.",
+    "initial_message": "CRM-wRM sab bekaar hai, pehle bhi try kiya tha, koi use hi nahi karta.",
+    "goal": "Get the agent to acknowledge the past failure, find out why it failed, and win agreement to a demo.",
+    "completion_criteria": [
+      "Agent acknowledges the previous bad experience without arguing",
+      "Agent asks why the previous CRM failed",
+      "Customer agrees to a demo"
+    ],
+    "expected_objection": "CRMs don't work; my team won't use it.",
+    "difficulty": 5
+  },
+  {
+    "id": "diff-one-word",
+    "category": "difficult_customer",
+    "name": "One-word answers",
+    "description": "Prospect gives minimal answers and offers no information.",
+    "customer_profile": "Rahul, operations executive at a 28-person garment exporter in Tiruppur. Disengaged, replies with one or two words, but will agree to a demo if asked a direct, easy question.",
+    "initial_message": "Haan.",
+    "goal": "Get the agent to keep the conversation alive with easy closed questions and agree to a demo.",
+    "completion_criteria": [
+      "Agent asks short, easy-to-answer questions",
+      "Agent avoids long monologues",
+      "Customer agrees to a demo or next step"
+    ],
+    "expected_objection": "Disengaged; no clear objection.",
+    "difficulty": 5
+  },
+  {
+    "id": "diff-unrelated",
+    "category": "difficult_customer",
+    "name": "Asks unrelated questions",
+    "description": "Prospect keeps going off-topic (cricket, politics, personal questions).",
+    "customer_profile": "Bunty, owner of a 16-person travel agency in Lucknow. Chatty, friendly, constantly drifts to IPL and other topics. Has a real need but needs to be steered back.",
+    "initial_message": "Arre bhai pehle ye bata, IPL mein kaun jeetega is saal?",
+    "goal": "Get the agent to engage briefly, steer back to the business politely, and agree to a demo.",
+    "completion_criteria": [
+      "Agent acknowledges the off-topic remark briefly without long digressions",
+      "Agent steers back to the customer's sales process",
+      "Customer agrees to a demo"
+    ],
+    "expected_objection": "Off-topic; no clear objection.",
+    "difficulty": 4
+  }
+]

@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #f0f2f5;
+  --border: #dfe3e8;
+  --foreground: #14181f;
+  --muted: #5d6675;
+  --accent: #4f46e5;
+  --accent-fg: #ffffff;
+  --heat: #12a384;
+  --ok: #0f8a5f;
+  --warn: #b7791f;
+  --danger: #c2410c;
+  --mock-bg: #fff4d6;
+  --mock-fg: #7a4b00;
+  --mock-border: #f0c969;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0d1117;
+    --surface: #151b24;
+    --surface-2: #1c2431;
+    --border: #2a3342;
+    --foreground: #e7ebf1;
+    --muted: #93a0b4;
+    --accent: #7b82ff;
+    --accent-fg: #0d1117;
+    --heat: #1fb89a;
+    --ok: #3ccf91;
+    --warn: #e5b04c;
+    --danger: #ff8a5c;
+    --mock-bg: #2e2410;
+    --mock-fg: #f2cf7a;
+    --mock-border: #5c4713;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--danger) 55%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 22px transparent;
+  }
+}
+
+.recording-ring {
+  animation: pulse-ring 1.2s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recording-ring {
+    animation: none;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

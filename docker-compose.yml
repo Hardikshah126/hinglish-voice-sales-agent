@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: hinglish-sales-agent-db
+    environment:
+      POSTGRES_USER: salesagent
+      POSTGRES_PASSWORD: salesagent
+      POSTGRES_DB: salesagent
+    ports:
+      # 5433 on the host so it does not collide with a locally installed PostgreSQL on 5432.
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Creates the separate database the test-suite uses on first start.
+      - ./docker/postgres-init.sql:/docker-entrypoint-initdb.d/01-test-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U salesagent -d salesagent"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  pgdata:
